@@ -23,8 +23,10 @@ a div p{
 	width: 50%;
 	height: 50%;
 }
- 
 
+.text-centered {
+	text-align: center;
+}
 
 #t {
 	border-style: solid;

@@ -45,10 +45,9 @@
 
 	<!--ContactMe style-->
 	<link rel="stylesheet" href="./css/contactme.css">
-	
-	<!--mouseover-->
-	<script src="./js/mouseover.js"></script>
 
+	<!--AboutMe style-->
+	<link rel="stylesheet" href="./css/aboutme.css">
 </head>
 
 <body>
@@ -86,20 +85,75 @@
 	  		</div>
 	  		<div class="col-sm-4">
 	    		<h3 class="hobbies">Hobbies:</h3>
-				<ul class="hobbies list">
-					<li>Coding</li>
-					<li>Sports</li>
-					<li>Boating</li>
-				</ul>
+				<p class="hobbies list">I am a junior at Notre Dame majoring in computer science, but outside of school I love to be with my family. My other hobbies include watching baseball, football, and golf, boating, spikeball, and working out. My favorite thing to do is eat good meals and make great memories, because "You can't take it with you."</p>
 	  		</div>
 		</div>
 		<div class="row">
+			<h3 class="fisher">President of Fisher Hall</h3><hr>
+			<div class="col-sm-8">
+				<p>When I am on campus but not working on my schoolwork, I am generally in or around Fisher Hall. While Notre Dame does not have any greek life on campus, our dorms are single-sex, and we stay in these dorms for 3-4 years. We come to associate with our dorm, and we form a tremendous brotherhood. The men I have been fortunate enough to meet in Fisher are amazing people, and I am very proud to be representing them as their president.</p>
+				<p>As president, I have many responsibilities, two of which include participating in Hall Presidents Council and planning major events for the dorm. With a staff of over 20 commissioners, my Vice President Andy Miles and I are able to plan 2 signature events and many miscellaneous events throughout the year. Our biggest event is the Fisher Regatta, which defines life in Fisher throughout the year.</p>
+			</div>
 			<div class="col-sm-4">
-			<!--
-	    		<h3 class="president">President - Fisher Hall</h3>
-	    		<ul>
-					<li>Coordinate Events
-	    		</ul>-->
+				<script src="./js/regattacountdown.js"></script>
+				<div id="regattacount"></div>
+			</div>
+		</div>
+		<div class="row">
+			<h3 class="courses">Relevant Coursework:</h3><hr>
+			<div class="col-sm-4 classes">
+				<h4>Sophomore Year:</h4>
+				<ul>
+					<li>
+						<span>Fundamentals of Computing I: </span>Learned the C language's concepts such as arrays, functions, and pointers, along with techniques and algorithms for approaching and solving problems in computer science
+					</li>
+					<li>
+						<span>Discrete Math: </span>Introduction to theoretical computer science concepts, including logic, set theory, recursion, algorithms, and graphs
+					</li>
+					<li>
+						<span>Fundamentals of Computing II: </span>Learned more advanced OOP concepts in C++ such as classes/objects, polymorphism, and inheritance, along with techniques for developing large software systems
+					</li>
+					<li>
+						<span>Basic Unix: </span>Learned how to navigate a Unix environment, including shell scripting in bash and tcsh, makefiles, vim, and scripting languages Perl and Python
+					</li>
+					<li>
+						<span>Logic Design: </span>Learned concepts of boolean algebra and switching circuits, Karnaugh maps, design of combinational and of sequential logic networks, and sequential machines
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-4 classes">
+				<h4>Junior Year:</h4>
+				<ul>
+					<li>
+						<span>Data Structures: </span>Fundamental techniques in the design and analysis of non-numerical algorithms and their data structures: lists, stacks, queues, priority queues and search trees
+					</li>
+					<li>
+						<span>Compilers: </span>An introduction to the fundamental techniques and tools used in compiler construction, including language specification, lexical analysis, parsing techniques, run-time environments, and code generation.
+					</li>
+					<li>
+						<span>Computer Architecture: </span>Introduction to architectural concepts present in current scalar machines, assembly language programming (MIPS), and computer arithmetic
+					</li>
+					<li>
+						<span>Database Concepts: </span>Learned effective techniques in managing, retrieving and updating information from a database, query processing, distributed databases, and data security 
+					</li>
+					<li>
+						<span>Computer Graphics: </span>Learned about computer graphics, including two-and three-dimensional geometries, raster graphics algorithms, primitive rendering, 3-D modeling, and scene description
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-4 classes">
+				<h4>Online Courses</h4>
+				<ul>
+					<li>
+						<span>Computer Networking: </span>
+					</li>
+					<li>
+						<span>Algorithms: </span>
+					</li>
+					<li>
+						<span>Machine Learning: </span>
+					</li>
+				</ul>
 			</div>
 		</div>
 
@@ -134,14 +188,11 @@
 
 
 		<!--Contact Me-->
-		<div id="contact-me" class="contactme jumbotron page-link">
-			<p class="centered">Contact Me:</p>
-			<!--Mail With Email
-			<div id="mail">
-				<a href="mailto:cjbara@nd.edu">
-					<span>cjbara@nd.edu</span>
-				</a>
-			</div> -->
+		<!--mouseover script-->
+		<script src="./js/mouseover.js"></script>
+
+		<div id="contact-me" class="contactme jumbotron text-centered">
+			<p class="text-centered">Contact Me:</p>
 			<div class="connect-button" id="mail-square">
 				<a href="mailto:cjbara@nd.edu">
 					<span class="glyphicon glyphicon-envelope "></span>

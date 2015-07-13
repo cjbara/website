@@ -9,7 +9,7 @@ $(document).ready(function() {
        		});
 
        		var id = $(this).attr('id');
-       		console.log(id+'.text');
+       		console.log('#'+id+'.text');
 
        		$('#'+id+'.text').css({
        			'display': 'block'
@@ -21,7 +21,7 @@ $(document).ready(function() {
        		});
 
        		var id = $(this).attr('id');
-       		console.log(id+'.text');
+       		console.log('#'+id+'.text');
 
        		$('#'+id+'.text').css({
        			'display': 'none'
