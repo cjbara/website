@@ -1,31 +1,31 @@
 
 $(document).ready(function() {
-	//This function makes the greyed out logos fade when hovered over
-	$('.connect-button').hover(
+       //This function makes the greyed out logos fade when hovered over
+       $('.connect-button').hover(
        function(){ 
-       		$(this).css({
-   				'-webkit-filter': 'grayscale(0%)',
-				'height': '95px'
-       		});
+                     $(this).css({
+                            '-webkit-filter': 'grayscale(0%)',
+                            'height': '95px'
+                     });
 
-       		var id = $(this).attr('id');
-       		console.log('#'+id+'.text');
+                     var id = $(this).attr('id');
+                     console.log('#'+id+'.text');
 
-       		$('#'+id+'.text').css({
-       			'display': 'block'
-       		});
-       	}, function(){ 
-       		$(this).css({
-       			'-webkit-filter': 'grayscale(100%)',
-       			'height': '75px'
-       		});
+                     $('#'+id+'.text').css({
+                            'display': 'block'
+                     });
+              }, function(){ 
+                     $(this).css({
+                            '-webkit-filter': 'grayscale(100%)',
+                            'height': '75px'
+                     });
 
-       		var id = $(this).attr('id');
-       		console.log('#'+id+'.text');
+                     var id = $(this).attr('id');
+                     console.log('#'+id+'.text');
 
-       		$('#'+id+'.text').css({
-       			'display': 'none'
-       		});
-       	}
-	);
+                     $('#'+id+'.text').css({
+                            'display': 'none'
+                     });
+              }
+       );
 });
