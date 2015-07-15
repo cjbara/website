@@ -1,8 +1,9 @@
 body {
 	/*Will make the sides blueish
 	background-color: #82caff !important;*/
-	padding-top: 70px;
+	padding-top: 50px;
 }
+
 img {
 	display: block;
 	position: relative;
@@ -26,6 +27,41 @@ a div p{
 
 .text-centered {
 	text-align: center;
+	color:white;
+}
+
+.header {
+	height:100%;
+	background: url(../images/background.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+
+.head-text {
+	font-family: arial, sans-serif;
+	font-weight:bold;
+	font-size: 7em;
+	color:#ffffff;
+	position:absolute;
+	margin:auto;
+	top:50%;
+	left:50%;
+	width:70%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.head-text * {
+	vertical-align: middle;
+}
+.head-text h1 {
+	font-size:70px;
+}
+.head-text h3 {
+	font-size:40px;
 }
 
 #t {
@@ -33,5 +69,4 @@ a div p{
 	border-width: 3px;
 	border-color: red;
 }
-
 

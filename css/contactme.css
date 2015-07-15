@@ -10,11 +10,6 @@ img {
 	height:300px;
 }
 
-.contactme {
-	overflow: hidden;
-	border-radius: 10px;
-}
-
 .contactme p {
 	margin-left: 10px;
 }
@@ -26,13 +21,14 @@ img {
 	width: 75px;
 	border-radius: 5px;
 	vertical-align: top;
+	border: 1px solid #e3e3e3;
 	-webkit-filter: grayscale(100%);
 }
 
 .text {
 	display: inline-block;
 	margin: -20px auto 0px auto;
-	width: 472px;
+	width: 470px;
 	border-radius:5px;
 	display: none;
 }
@@ -66,7 +62,7 @@ img {
 	padding-top:7px;
 }
 #github a img {
-	height:63px;
+	height:60px;
 }
 
 .glyphicon-envelope	{

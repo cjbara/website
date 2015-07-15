@@ -43,6 +43,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 	<script src="./js/main.js"></script>
 
+	<!--Font-->
+	<link href='http://fonts.googleapis.com/css?family=Fjalla+One|Roboto:700,400' rel='stylesheet' type='text/css'>
 	<!--Custom style-->
 	<link rel="stylesheet" href="./css/stylesheet.css">
 
@@ -56,37 +58,41 @@
 <body>
 
 	<!--Navbar-->
-    <div class="container">
-    	<nav class="navbar navbar-default navbar-fixed-top">
-    		<div class="container-fluid">
-	    		<div class="navbar-header">
-	    			<a class="navbar-brand" href="#">Cory Jbara</a>
-	    		</div>
-	    		<div class="collapse navbar-collapse">
-	    			<ul class="nav navbar-nav navbar-right">
-	    				<li><a href="#about-me">About Me</a></li>
-	    				<li><a href="#projects">Projects</a></li>
-	    				<li><a href="#contact-me">Contact Me</a></li>
-	    			</ul>
-	    		</div>
-	    	</div>
-    	</nav>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+    		<div class="navbar-header">
+    			<a class="navbar-brand" href="#">Cory Jbara</a>
+    		</div>
+    		<div class="collapse navbar-collapse">
+    			<ul class="nav navbar-nav navbar-right">
+    				<li><a href="#about-me">About Me</a></li>
+    				<li><a href="#projects">Projects</a></li>
+    				<li><a href="#contact-me">Contact Me</a></li>
+    			</ul>
+    		</div>
+    	</div>
+	</nav>
 
-    	<div class="jumbotron">
-			<h1>Cory Jbara</h1>
-      	</div>
-      	<hr>
-    	<!--About Me-->
-    	<h1 id="about-me" class="page-link">About Me</h1>
+	<header class="header">
+		<div class="container">
+			<div class="head-text">
+				<h1>Cory Jbara</h1><hr>
+				<h3>University of Notre Dame<br>
+					Computer Science<br>
+					Class of 2017</h3>
+			</div>
+		</div>
+  	</header>
+  	<hr>
+
+    <!--About Me-->
+    <div class="container">
+    	<h1 id="about-me" class="page-link text-center">About Me</h1>
 		<div class="row">
 	  		<div class="col-sm-4">
 	    		<img class="image" src="./images/beachpic.jpg" max-width=100% max-height=100%>
 	  		</div>
-	  		<div class="col-sm-4">
-	    		<h3 class="education">Education:</h3>
-				<p>University of Notre Dame<br>Computer Science<br>Class of 2017</p>
-	  		</div>
-	  		<div class="col-sm-4">
+	  		<div class="col-sm-8">
 	    		<h3 class="hobbies">Hobbies:</h3>
 				<p class="hobbies list">I am a junior at Notre Dame majoring in computer science, but outside of school I love to be with my family. My other hobbies include watching baseball, football, and golf, boating, spikeball, and working out. My favorite thing to do is eat good meals and make great memories, because "You can't take it with you."</p>
 	  		</div>
@@ -190,45 +196,44 @@
 				</a>
 			</div>-->
 		</div>
-
+	</div>
 
 		<!--Contact Me-->
 		<!--mouseover script-->
 		<script src="./js/mouseover.js"></script>
 
-		<div id="contact-me" class="contactme jumbotron text-centered">
-			<h3 class="text-centered">Contact Me:</h3>
-			<div class="connect-button" id="mail-square">
-				<a href="mailto:cjbara@nd.edu">
-					<span class="glyphicon glyphicon-envelope "></span>
-				</a>
-			</div>
-			<div class="connect-button" id="facebook">
-				<a href="https://www.facebook.com/cory.jbara" target="_blank">
-					<img src="./images/facebook.png">
-				</a>
-			</div>
-			<div class="connect-button" id="twitter">
-				<a href="https://twitter.com/CoryJbara" target="_blank">
-					<img src="./images/twitter.png">
-				</a>
-			</div>
-			<div class="connect-button" id="linkedin">
-				<a href="https://www.linkedin.com/pub/cory-jbara/76/41/978" target="_blank">
-					<img src="./images/linkedin.png">
-				</a>
-			</div>
-			<div class="connect-button" id="github">
-				<a href="https://github.com/cjbara" target="_blank">
-					<img src="./images/github.png">
-				</a>
-			</div>
-			<div class="well well-sm text" id="mail-square"><p>Email Me: cjbara@nd.edu</p></div>
-			<div class="well well-sm text" id="facebook"><p>Visit Me On Facebook</p></div>
-			<div class="well well-sm text" id="twitter"><p>Follow Me On Twitter</p></div>
-			<div class="well well-sm text" id="linkedin"><p>Connect With Me On LinkedIn</p></div>
-			<div class="well well-sm text" id="github"><p>Check Out My GitHub Profile</p></div>
+	<footer id="contact-me" class="contactme header text-centered">
+		<h3 class="text-centered">Contact Me:</h3>
+		<div class="connect-button" id="mail-square">
+			<a href="mailto:cjbara@nd.edu">
+				<span class="glyphicon glyphicon-envelope "></span>
+			</a>
 		</div>
-	</div>
+		<div class="connect-button" id="facebook">
+			<a href="https://www.facebook.com/cory.jbara" target="_blank">
+				<img src="./images/facebook.png">
+			</a>
+		</div>
+		<div class="connect-button" id="twitter">
+			<a href="https://twitter.com/CoryJbara" target="_blank">
+				<img src="./images/twitter.png">
+			</a>
+		</div>
+		<div class="connect-button" id="linkedin">
+			<a href="https://www.linkedin.com/pub/cory-jbara/76/41/978" target="_blank">
+				<img src="./images/linkedin.png">
+			</a>
+		</div>
+		<div class="connect-button" id="github">
+			<a href="https://github.com/cjbara" target="_blank">
+				<img src="./images/github.png">
+			</a>
+		</div>
+		<div class="well well-sm text" id="mail-square"><p>Email Me: cjbara@nd.edu</p></div>
+		<div class="well well-sm text" id="facebook"><p>Visit Me On Facebook</p></div>
+		<div class="well well-sm text" id="twitter"><p>Follow Me On Twitter</p></div>
+		<div class="well well-sm text" id="linkedin"><p>Connect With Me On LinkedIn</p></div>
+		<div class="well well-sm text" id="github"><p>Check Out My GitHub Profile</p></div>
+	</footer>
 </body>
 </html>
