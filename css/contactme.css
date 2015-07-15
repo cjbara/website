@@ -6,8 +6,11 @@ img {
 }
 
 #contact-me {
-	margin-bottom:100px;
-	height:300px;
+	height:400px;
+}
+
+.contactme h3{
+	padding-top:5%;
 }
 
 .contactme p {
@@ -27,7 +30,7 @@ img {
 
 .text {
 	display: inline-block;
-	margin: -20px auto 0px auto;
+	margin: 10px auto 10px auto;
 	width: 470px;
 	border-radius:5px;
 	display: none;
@@ -58,9 +61,13 @@ img {
 
 #github {
 	background-color: #00cc66;
+}
+
+#github.connect-button {
 	padding:5px;
 	padding-top:7px;
 }
+
 #github a img {
 	height:60px;
 }
@@ -69,4 +76,8 @@ img {
 	font-size: 55px;
 	padding-top: 13.33%;
 	color: white;
+}
+
+#copyright {
+	margin-top:100px;
 }

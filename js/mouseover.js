@@ -5,7 +5,7 @@ $(document).ready(function() {
        function(){ 
                      $(this).css({
                             '-webkit-filter': 'grayscale(0%)',
-                            'height': '95px'
+                            //'height': '95px'
                      });
 
                      var id = $(this).attr('id');
@@ -14,10 +14,15 @@ $(document).ready(function() {
                      $('#'+id+'.text').css({
                             'display': 'block'
                      });
+
+                     //for the copyright
+                     $('#copyright').css({
+                            'margin-top': '30px'
+                     });
               }, function(){ 
                      $(this).css({
                             '-webkit-filter': 'grayscale(100%)',
-                            'height': '75px'
+                            //'height': '75px'
                      });
 
                      var id = $(this).attr('id');
@@ -25,6 +30,11 @@ $(document).ready(function() {
 
                      $('#'+id+'.text').css({
                             'display': 'none'
+                     });
+
+                     //for the copyright
+                     $('#copyright').css({
+                            'margin-top': '100px'
                      });
               }
        );

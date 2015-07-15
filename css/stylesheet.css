@@ -7,8 +7,8 @@ body {
 img {
 	display: block;
 	position: relative;
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 99%;
+	max-height: 99%;
 }
 
 a div p{
@@ -43,7 +43,6 @@ a div p{
 .head-text {
 	font-family: arial, sans-serif;
 	font-weight:bold;
-	font-size: 7em;
 	color:#ffffff;
 	position:absolute;
 	margin:auto;
