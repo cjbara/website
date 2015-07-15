@@ -44,13 +44,19 @@ a div p{
 	font-family: arial, sans-serif;
 	font-weight:bold;
 	color:#ffffff;
-	position:absolute;
-	margin:auto;
-	top:50%;
-	left:50%;
 	width:70%;
 	text-align: center;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+#head-container {
+	padding-top:15%;
+	overflow: visible;
 }
 
 .head-text * {
