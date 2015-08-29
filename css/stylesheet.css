@@ -2,6 +2,7 @@ body {
 	/*Will make the sides blueish
 	background-color: #82caff !important;*/
 	padding-top: 50px;
+	
 }
 
 img {
@@ -20,6 +21,11 @@ a div p{
 	text-decoration: none;
 }
 
+.page-link {
+	padding-top:50px; 
+	padding-bottom: 20px;
+}
+
 .projects {
 	float:left;	
 	width: 50%;
@@ -33,7 +39,7 @@ a div p{
 
 .header {
 	height:100%;
-	background: url(../images/background.png) no-repeat center center fixed; 
+	background: url(../images/background.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -42,7 +48,7 @@ a div p{
 }
 
 .head-text {
-	font-family: arial, sans-serif;
+	font-family: roboto, arial, sans-serif;
 	font-weight:bold;
 	color:#ffffff;
 	width:70%;
@@ -64,10 +70,10 @@ a div p{
 	vertical-align: middle;
 }
 .head-text h1 {
-	font-size:70px;
+	font-size:63px;
 }
 .head-text h3 {
-	font-size:40px;
+	font-size:22px;
 }
 
 .caption p a {
