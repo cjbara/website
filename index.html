@@ -69,8 +69,17 @@
     		</div>
     		<div class="collapse navbar-collapse">
     			<ul class="nav navbar-nav navbar-right">
-    				<li><a href="#about-me">About Me</a></li>
+    				<li class="dropdown">
+    					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Me <span class="caret"></span></a>
+          				<ul class="dropdown-menu">
+				            <li><a href="#about-me">About Me</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#fisher">Fisher President</a></li>
+				            <li><a href="#courses">Relevant Coursework</a></li>
+				        </ul>
+				    </li>
     				<li><a href="#projects">Projects</a></li>
+    				<li><a href="./resume.pdf">Resume</a></li>
     				<li><a href="#contact-me">Contact Me</a></li>
     			</ul>
     		</div>
@@ -89,36 +98,35 @@
 
     <!--About Me-->
     <div class="container">
-    	<h1 id="about-me" class="page-link text-center">About Me</h1>
-		<div class="row">
-	  		<div class="col-sm-4">
+		<div class="row page-link" id="about-me">
+			<div class="col-sm-1">
+	  		</div>
+	  		<div class="col-sm-3">
 	    		<img class="image" src="./images/beachpic.jpg">
 	  		</div>
-	  		<div class="col-sm-4">
-	    		<h3 class="hobbies">Education:</h3>
-				<p class="education list">University of Notre Dame<br>
-					Computer Science<br>
-					Class of 2017</p>
-	  		</div>
-	  		<div class="col-sm-4">
-	    		<h3 class="hobbies">Hobbies:</h3>
-				<p class="hobbies list">I am a junior at Notre Dame majoring in computer science, but outside of school I love to be with my family. My other hobbies include watching baseball, football, and golf, boating, playing spikeball, and working out. My favorite thing to do is eat good meals and make great memories, because "You can't take it with you."</p>
+	  		<div class="col-sm-8">
+	    		<h3 class="hobbies text-center">HI THERE, I'M CORY</h3>
+				<p class="text-center">I am a junior at <a href="http://nd.edu">Notre Dame</a> majoring in <a href="http://cse.nd.edu">Computer Science</a>. I love coding and working on developing applications for a variety of uses. One of my major passions is to digitize all information. In the recent years, some great innovators have developed awesome technologies to accomplish this goal, ranging everywhere from personal money transfer (Venmo being my favorite) to ride services (Uber is fantastic), and I am excited to partake in this innovations. 
+				</p>
+				<p class="text-center">Outside of schoolwork and projects, I love to be involved with my family and my <a href="#fisher">Fisher family</a>. I love watching and playing sports, including baseball, football, hockey, and spikeball, and will always get excited about a good meal. I enjoy staying active through running, lifting, yoga, and the occasional swim. I find helping others to be one of the most rewarding experiences life has to offer, and I try to do so whenever I have the opportunity.
+				</p>
 	  		</div>
 		</div>
-		<div class="row">
-			<hr>
-			<h3 class="fisher">President of Fisher Hall</h3>
+		<hr>
+		<div class="row page-link" id="fisher">
+			<h3>President of Fisher Hall</h3>
 			<div class="col-sm-8">
 				<p>When I am on campus but not working on my schoolwork, I am generally in or around Fisher Hall. While Notre Dame does not have any greek life on campus, our dorms are single-sex, and we stay in these dorms for 3-4 years. We come to associate with our dorm, and we form a tremendous brotherhood. The men I have been fortunate enough to meet in Fisher are amazing people, and I am very proud to be representing them as their president.</p>
-				<p>As president, I have many responsibilities, two of which include participating in Hall Presidents Council and planning major events for the dorm. With a staff of over 20 commissioners, my Vice President Andy Miles and I are able to plan 2 signature events and many miscellaneous events throughout the year. Our biggest event is the Fisher Regatta, which defines life in Fisher throughout the year.</p>
+				<p>As president, I have many responsibilities, two of which include participating in Hall Presidents Council and planning major events for the dorm. With a staff of over 20 commissioners, my Vice President Andy Miles and I are able to plan 2 signature events and many miscellaneous events throughout the year. Our biggest event is the <a href="http://fisher.nd.edu/fisher-events/regatta/">Fisher Regatta</a>, which defines life in Fisher throughout the year.</p>
+				<p>I love to lead and set a good exaple for those who look up to me. As a Junior this year, I have been able to help the new Fishermen adapt to campus life and hopefully make their first college experience a great one. Hopefully my example will carry on to those under me, and inspire them to do great things in the future.</p>
 			</div>
 			<div class="col-sm-4">
 				<script src="./js/regattacountdown.js"></script>
 				<div id="regattacount"></div> until the Fisher Regatta
 			</div>
 		</div>
-		<div class="row">
-			<hr>
+		<hr>
+		<div class="row page-link" id="courses">
 			<h3 class="courses">Relevant Coursework:</h3>
 			<!--<div class="btn-group btn-group-justified" role="group" aria-label="...">
 				<div class="btn-group" role="group">
@@ -167,24 +175,10 @@
 						<span>Database Concepts: </span>Learned effective techniques in managing, retrieving and updating information from a database, query processing, distributed databases, and data security 
 					</li>
 					<!-- <li>
-						<span>Case Studies in Computing Based Entrepreneurship: </span>Learned about many different computer startups,  graphics, including two-and three-dimensional geometries, raster graphics algorithms, primitive rendering, 3-D modeling, and scene description
+						<span>Computer Entrepreneurship: </span>Learned about many different computer startups,  graphics, including two-and three-dimensional geometries, raster graphics algorithms, primitive rendering, 3-D modeling, and scene description
 					</li> -->
 				</ul>
 			</div>
-			<!-- <div class="col-sm-4 classes">
-				<h4>Online Courses</h4>
-				<ul>
-					<li>
-						<span>Computer Networking: </span>
-					</li>
-					<li>
-						<span>Algorithms: </span>
-					</li>
-					<li>
-						<span>Machine Learning: </span>
-					</li>
-				</ul>
-			</div> -->
 		</div>
 		<hr>
 
@@ -226,15 +220,11 @@
 					<img class= "img-responsive project-img" src="./images/website.jpg">
 					<div class="caption">
 						<h3>CoryJbara.com</h3>
-						<p>When I started to build this site, I decided to code it myself instead of using a site like WordPress. I wrote the HTML, CSS, and JS for this website, utilizing the Bootstrap and jQuery libraries. By doing this project, I gained a deep understanding of front-end web dev.</p>
+						<p>When I started to build this site, I decided to code it myself instead of using a site like WordPress. I wrote the HTML, CSS, and JS for this website, utilizing the Bootstrap and jQuery libraries. By doing this project, I gained a deep understanding of front-end web development.<br><hr><small>(I agree, this being on my list of projects is entirely too meta)</small>
+						</p>
 					</div>
 				</div>
 			</div>
-			<!--<div class="col-sm-4">
-				<a href="#" class="thumbnail">
-					<img class= "image" src="./images/pacman.png">
-				</a>
-			</div>-->
 		</div>
 	</div>
 

@@ -2,7 +2,7 @@ body {
 	/*Will make the sides blueish
 	background-color: #82caff !important;*/
 	padding-top: 50px;
-	
+
 }
 
 img {
@@ -22,8 +22,8 @@ a div p{
 }
 
 .page-link {
-	padding-top:50px; 
-	padding-bottom: 20px;
+	padding-top:100px; 
+	padding-bottom: 50px;
 }
 
 .projects {
