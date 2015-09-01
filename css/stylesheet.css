@@ -22,7 +22,7 @@ a div p{
 }
 
 .page-link {
-	padding-top:100px; 
+	padding-top:50px; 
 	padding-bottom: 50px;
 }
 
@@ -79,6 +79,22 @@ a div p{
 .caption p a {
 	display: inline-block;
 	margin-right:5px;
+}
+
+.techskills span {
+	font-weight: bold;
+}
+
+.softskills span {
+	font-weight: bold;
+}
+
+.table {
+	font-size:12px;
+}
+
+.color {
+	background-color: rgb(245, 245, 245);
 }
 
 #t {

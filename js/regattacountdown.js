@@ -25,10 +25,11 @@ CDown.prototype = {
 		var out="";
 		if(r.d != 0){out += r.d +" "+((r.d==1)?"day":"days")+", ";}
 		if(r.h != 0){out += r.h +" "+((r.h==1)?"hour":"hours")+", ";}
-		out += r.m +" "+((r.m==1)?"min":"mins")+", ";
-		out += r.s +" "+((r.s==1)?"sec":"secs")+", ";
+		out += r.m +" "+((r.m==1)?"minute":"minutes")+", and ";
+		out += r.s +" "+((r.s==1)?"second":"seconds");
+		out += " until the next Fisher Regatta";
 
-		return out.substr(0,out.length-2);
+		return out.substr(0,out.length);
 	},
 	math: function(work){
 		var	y=w=d=h=m=s=ms=0;
