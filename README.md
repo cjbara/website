@@ -1,6 +1,4 @@
 # website
-The code for my personal website
+This repo is the code for my personal website, coryjbara.com
 
-This code is written in HTML/CSS/jQuery and is used at my personal website at coryjbara.com
-
-I will be creating web applications as well, but I have not started this, as I am just working on my homepage currently
+This code is written in HTML/CSS/JS and uses Bootstrap and jQuery libraries. If you have any suggestions, be sure to let me know!
