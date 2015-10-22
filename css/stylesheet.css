@@ -103,3 +103,12 @@ a div p{
 	border-color: red;
 }
 
+.thumbnail img {
+	height: 200px;
+	width: 100%;
+}
+
+.thumb2 {
+	height: 280px !important;
+	width: 100%;
+}
