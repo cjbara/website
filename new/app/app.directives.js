@@ -26,4 +26,11 @@ angular.module('app.directives', [])
 		restrict: 'E',
 		templateUrl: 'views/footer.html'
 	};
-});
+})
+
+.directive('sidebar', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'views/sidebar.html'
+	};
+})

@@ -19,10 +19,28 @@ angular.module('app.routes', ['ngRoute'])
 		// projects page
 		.when('/projects', {
 			templateUrl : 'views/projects.html',
+   			controller  : 'projectController',
+    		controllerAs: 'pcontroller'
+		})
+
+		// resumes page
+		.when('/resume', {
+			templateUrl : 'views/resume.html',
    			controller  : 'mainController',
     		controllerAs: 'main'
-		});
+		})
 
-	// use the HTML5 History API
-    $locationProvider.html5Mode(true);
+		// skills page
+		.when('/skills', {
+			templateUrl : 'views/skills.html',
+   			controller  : 'mainController',
+    		controllerAs: 'main'
+		})
+
+		// contact page
+		.when('/contact', {
+			templateUrl : 'views/contact.html',
+   			controller  : 'contactController',
+    		controllerAs: 'contact'
+		});
 });
