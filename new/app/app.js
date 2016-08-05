@@ -1,1 +1,1 @@
-angular.module('coryWebsiteApp', ['mainCtrl', 'contactCtrl', 'app.routes', 'app.directives']);
+angular.module('coryWebsiteApp', ['mainCtrl', 'contactCtrl', 'sidebarCtrl', 'projCtrl', 'app.routes', 'app.directives']);

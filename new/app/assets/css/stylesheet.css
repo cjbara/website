@@ -1,8 +1,14 @@
-body {
-	/*Will make the sides blueish
-	background-color: #82caff !important;*/
-	padding-top: 50px;
+.resume {
+	height: 100%;
+	width: 100%;
+}
 
+.side-nav .userView {
+	margin-bottom: 0px !important;
+}
+
+.non-sidebar {
+	margin-left:300px;
 }
 
 img {
