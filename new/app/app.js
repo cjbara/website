@@ -1,0 +1,1 @@
+angular.module('coryWebsiteApp', ['mainCtrl', 'contactCtrl', 'app.routes', 'app.directives']);
