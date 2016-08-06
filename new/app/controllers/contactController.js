@@ -15,8 +15,6 @@ angular.module('contactCtrl', [])
 				vm.text = 'Email Me: cjbara@nd.edu'; break;
 			case 'facebook':
 				vm.text = 'Visit Me On Facebook'; break;
-			case 'twitter':
-				vm.text = 'Follow Me On Twitter'; break;
 			case 'linkedin':
 				vm.text = 'Connect With Me On LinkedIn'; break;
 			case 'github':

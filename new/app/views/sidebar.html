@@ -2,13 +2,12 @@
  <ul id="slide-out" class="side-nav fixed">
     <li>
     	<div class="userView">
-			<img class="background" src="assets/images/colors.jpg" style="height:100%; width:100%">
-			<a href="#!user"><img class="circle" src="assets/images/coryjbara.jpg"></a>
-			<a href="#!name"><span class="white-text name">Cory Jbara</span></a>
-			<a href="#!email"><span class="white-text email">cjbara@nd.edu</span></a>
+			<img class="circle center" src="assets/images/coryjbara.jpg">
+			<span class="name center">Cory Jbara</span>
+			<span class="email center">cjbara@nd.edu</span>
     	</div>
     </li>
-    <li ng-repeat="tab in side.tabs">
+    <li ng-repeat="tab in side.tabs" class="sidemenu">
     	<a class="waves-effect" ng-href="#/{{tab.link}}">{{tab.title}}</a>
     </li>
   </ul>

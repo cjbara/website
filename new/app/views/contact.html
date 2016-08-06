@@ -1,31 +1,23 @@
 <!-- Footer -->
-    <footer id="contact-me" class="contactme header" ng-controller="contactController as contact">
-        <h3 class="text-centered">Contact Me:</h3>
-        <div class="connect-button" id="mail-square" ng-mouseover="contact.setContactInfo('mail-square');" ng-mouseleave="contact.hideContact()">
+      <!--   <div class="connect-button" id="mail-square" ng-mouseover="contact.setContactInfo('mail-square');" ng-mouseleave="contact.hideContact()">
             <a href="mailto:cjbara@nd.edu">
                 <span class="glyphicon glyphicon-envelope"></span>
             </a>
-        </div>
+        </div> -->
         <div class="connect-button" id="facebook" ng-mouseover="contact.setContactInfo('facebook');" ng-mouseleave="contact.hideContact()">
             <a href="https://www.facebook.com/cory.jbara" target="_blank">
-                <img src="assets/images/facebook.png">
-            </a>
-        </div>
-        <div class="connect-button" id="twitter" ng-mouseover="contact.setContactInfo('twitter');" ng-mouseleave="contact.hideContact()">
-            <a href="https://twitter.com/CoryJbara" target="_blank">
-                <img src="assets/images/twitter.png">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
         </div>
         <div class="connect-button" id="linkedin" ng-mouseover="contact.setContactInfo('linkedin');" ng-mouseleave="contact.hideContact()">
             <a href="https://www.linkedin.com/pub/cory-jbara/76/41/978" target="_blank">
-                <img src="assets/images/linkedin.png">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
         </div>
         <div class="connect-button" id="github" ng-mouseover="contact.setContactInfo('github');" ng-mouseleave="contact.hideContact()">
             <a href="https://github.com/cjbara" target="_blank">
-                <img src="assets/images/github.png">
+                <i class="fa fa-github" aria-hidden="true"></i>
             </a>
         </div>
-        <div class="well well-sm text" id="{{contact.id}}" ng-show="contact.show"><p>{{contact.text}}</p></div>
-        <h5 class="text-centered {{contact.copyright}}">&copy Cory Jbara 2015</h5>
-    </footer>
+<!--         <div class="well well-sm text" id="{{contact.id}}" ng-show="contact.show"><p>{{contact.text}}</p></div>
+        <h6 class="text-centered {{contact.copyright}}">&copy Cory Jbara 2015</h6> -->

@@ -35,6 +35,11 @@
     <div class="row">
         <sidebar></sidebar>
         <div class="non-sidebar">
+            <div class="header" ng-show="main.showHeader">
+                <div class="valign-wrapper">
+                    <h2 id="title" class="center-align">{{main.pageTitle}}</h2>
+                </div>
+            </div>
             <ng-view></ng-view>
         </div>
     </div>
