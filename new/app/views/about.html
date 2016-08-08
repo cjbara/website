@@ -1,108 +1,31 @@
     <!--About Me-->
-    <div class="container" id="about-me">
-	    <div class="row page-link">
-                <h3 class="text-center">HI THERE, I'M CORY</h3>
-	            <p class="text-center">I am a junior at <a href="http://nd.edu">Notre Dame</a> majoring in <a href="http://cse.nd.edu">Computer Science</a>. I love coding and working on developing applications for a variety of uses. One of my major passions is to digitize all information. In the recent years, some great innovators have developed awesome technologies to accomplish this goal, ranging everywhere from personal money transfer (Venmo being my favorite) to ride services (Uber is fantastic), and I am excited to partake in these innovations. 
-	            </p>
-	            <p class="text-center">Outside of schoolwork and projects, I love to be involved with my family and my <a href="#fisher">Fisher family</a>. I love watching and playing sports, including baseball, football, hockey, and spikeball, and will always get excited about a good meal. I enjoy staying active through running, lifting, yoga, and the occasional swim. I find helping others to be one of the most rewarding experiences life has to offer, and I try to do so whenever I have the opportunity.
-	            </p>
-	            <p class="text-center">As a brief disclaimer, this website is not a résumé <a href="assets/resume.pdf">(although you can download my résumé here)</a>, but rather a way for employers and others to get to know me, and also a way for me to practice my web development skills.</p>
-	    </div>
-	</div>
-	<div class="color" id="hobbies">
-	<div class="container">
-	    <div class="row page-link">
-	        <h3>Hobbies</h3>
-	        <div class="col-sm-3">
-	            <img src="assets/images/paddle.jpg">
-	        </div>
-	        <div class="col-sm-6">
-	            <p>I am a very big sports fan, especially college football, but I also love to follow golf, the NFL, college basketball, and the MLB. I also love to play sports, ranging everywhere from full pad ice hockey to Spikeball on the quad.
-	            </p>
-	            <p>I also love to follow technology news. I am very excited about the new advancement in machine learning, such as Apple being able to recommend apps based on context, or Google being able to decipher the traffic patterns on a freeway. I look forward to being part of these innovations, because I know they will continue to be more widespread over the next few years.
-	            </p>
-	            <p>In the summer, I love spending time on the lake. My most recent fad is paddleboarding, something I love to do to relax. Sometimes my dog Kobe even joins me out there (left)! I also love to water ski, which my dad and I try to do most days when I am home in the summer.
-	            </p>
-	            <p>I am extremely lucky to have such an amazing family (right) as a support system that provides guidance whenever I need. We love to laugh and do fun things together, whether it be a long family vacation every summer, or an impromptu meal where we all gather around the dinner table.
-	            </p>
-	        </div>
-	        <div class="col-sm-3">
-	            <img src="assets/images/family.jpg">
-	        </div>
-	    </div>
-	</div>
-	</div>
-	<div class="color" id="fisher">
-	    <div class="container">
-	        <div class="row page-link">
-	            <h3>President of Fisher Hall</h3>
-	            <div class="col-sm-6">
-	                <p>There are not many things that I am as passionate about as <a href="http://fisher.nd.edu/">Fisher Hall</a>. When I am on campus and not working on my schoolwork, I am generally in or around Fisher. While Notre Dame does not have greek life on campus, our dorms are single-sex, and most students reside in these dorms for 3-4 years. We come to associate with our dorm, and we form a tremendous brotherhood. Fisher has become my family away from home, and I have a tremendous sense of pride about my dorm. The men I have been fortunate enough to meet in Fisher are amazing people, and I am very proud to be representing them this year as their president.</p>
-	                <p>As president, I have many responsibilities, two of which include participating in Hall Presidents Council and planning major events for the dorm. With a staff of over 20 commissioners, my Vice President Andy Miles and I are able to plan 2 signature events and many weekly activities throughout the year. Our flagship event is the <a href="http://fisher.nd.edu/fisher-events/regatta/">Fisher Regatta</a>, which defines life in Fisher, even when there are still.</p>
-	                <p>I love to lead and set a good example for those who look up to me. As a Junior this year, I have been able to help the new Fishermen adapt to campus life and make their initial college experience a great one. Hopefully my example will carry on to those under me, and inspire them to do great things in the future.</p>
-	            </div>
-	            <div class="col-sm-4">
-	                <p>Every year, the men of Fisher sport what is known as a "Regattahawk," a mohawk that simultaneously raises money for charity and also shows dorm pride. In order to lead my brothers, I felt compelled to get a very nice Regattahawk (right). This year's proceeds were donated to St. Adalbert's, a poor Catholic school and parish in South Bend with whom the men of Fisher have been working for a year now. Overall, we raised $5,100 at the Regatta last year to help purchase a new gym floor for the school.</p>
-	            </div>
-	            <div class="col-sm-2">
-	                <img src="assets/images/regattahawk.jpg"><small>My Regattahawk looked very good this year. Even my sister Lauren (left) came out to support the Fisher Regatta last year.</small>
-	            </div>
-	        </div>
-	    </div>
+    <ul class="tabs z-depth-1">
+      <li class="tab"><a ng-click="main.select('about')">About</a></li>
+      <li class="tab"><a ng-click="main.select('hobbies')">Hobbies</a></li>
+      <li class="tab"><a ng-click="main.select('prez')">Fisher Life</a></li>
+    </ul>
+    <div class="container">
+        <div id="about" class="col s12" ng-show="main.about">
+            <p class="text-center">I am a senior at <a href="http://nd.edu">Notre Dame</a> majoring in <a href="http://cse.nd.edu">Computer Science</a>. I love coding and working on developing applications for a variety of uses. One of my major passions is to digitize all information. In the recent years, some great innovators have developed awesome technologies to accomplish this goal, ranging everywhere from personal money transfer to ride services, and I am excited to partake in these innovations. 
+            </p>
+            <p class="text-center">Outside of schoolwork and projects, I love to be involved with my family and my <a href="#fisher">Fisher family</a>. I love watching and playing sports, including the Olympics, baseball, football, hockey, and spikeball, and will always get excited about a good meal. I enjoy staying active through running, lifting, yoga, and the occasional swim. I find helping others to be one of the most rewarding experiences life has to offer, and I try to do so whenever I have the opportunity.
+            </p>
+        </div>
+        <div id="hobbies" ng-show="main.hobbies">
+            <p>I am a very big sports fan, especially college football, but I also love to follow golf, the NFL, college basketball, and the MLB. I also love to play sports, ranging everywhere from full pad ice hockey to Spikeball on the quad.
+            </p>
+            <p>I also love to follow technology news. I am very excited about the new advancement in machine learning, such as Apple being able to recommend apps based on context or Google (or Here Maps) being able to decipher the traffic patterns on a freeway. I look forward to being part of these innovations, because I know they will continue to be more widespread over the coming years.
+            </p>
+            <p>In the summer, I love spending time on the lake. My most recent fad is paddleboarding, something I love to do to relax. Sometimes my dog Kobe even joins me out there! I also love to water ski, which my dad and I try to do most days when I am home in the summer.
+            </p>
+            <p>I am extremely lucky to have such an amazing family as a support system that provides guidance whenever I need. We love to laugh and do fun things together, whether it be a long family vacation every summer, or an impromptu meal where we all gather around the dinner table.
+            </p>
+        </div>
+        <div id="president" ng-show="main.prez">
+            <p>There are not many things that I am as passionate about as <a href="http://fisher.nd.edu/">Fisher Hall</a>. When I am on campus and not working on my schoolwork, I am generally in or around Fisher. While Notre Dame does not have greek life on campus, our dorms are single-sex, and most students reside in these dorms for 3-4 years. We come to associate with our dorm, and we form a tremendous brotherhood. Fisher has become my family away from home, and I have a tremendous sense of pride about my dorm. The men I have been fortunate enough to meet in Fisher are amazing people, and I was very proud to represent them last year as their president.</p>
+            <p>I love to lead and set a good example for those who look up to me. As a Senior living off-campus with five of my other Fisher Brothers, I am  able to help the new Fishermen adapt to campus life and make their initial college experience a great one. Hopefully my example will carry on to those under me, and inspire them to do great things in the future.</p>
+        </div>
 	</div>
 
-<div class="modal fade" id="courseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title" id="myModalLabel">Relevant Coursework</h3>
-            </div>
-            <div class="modal-body">
-                <div class="classes">
-            <h4>Sophomore Year:</h4>
-            <ul>
-                <li>
-                    <span>Fundamentals of Computing I: </span>Learned the C language's concepts such as arrays, functions, and pointers, along with techniques and algorithms for approaching and solving problems in computer science
-                </li>
-                <li>
-                    <span>Discrete Math: </span>Introduction to theoretical computer science concepts, including logic, set theory, recursion, algorithms, and graphs
-                </li>
-                <li>
-                    <span>Fundamentals of Computing II: </span>Learned more advanced OOP concepts in C++ such as classes/objects, polymorphism, and inheritance, along with techniques for developing large software systems
-                </li>
-                <li>
-                    <span>Basic Unix: </span>Learned how to navigate a Unix environment, including shell scripting in bash and tcsh, makefiles, vim, and scripting languages Perl and Python
-                </li>
-                <li>
-                    <span>Logic Design: </span>Learned concepts of boolean algebra and switching circuits, Karnaugh maps, design of combinational and of sequential logic networks, and sequential machines
-                </li>
-            </ul>
-        </div>
-        <div class="classes">
-            <h4>Junior Year:</h4>
-            <ul>
-                <li>
-                    <span>Data Structures: </span>Fundamental techniques in the design and analysis of non-numerical algorithms and their data structures: lists, stacks, queues, priority queues and search trees
-                </li>
-                <li>
-                    <span>Compilers: </span>An introduction to the fundamental techniques and tools used in compiler construction, including language specification, lexical analysis, parsing techniques, run-time environments, and code generation.
-                </li>
-                <li>
-                    <span>Computer Architecture: </span>Introduction to architectural concepts present in current scalar machines, assembly language programming (MIPS), and computer arithmetic
-                </li>
-                <li>
-                    <span>Database Concepts: </span>Learned effective techniques in managing, retrieving and updating information from a database, query processing, distributed databases, and data security 
-                </li>
-                <li>
-                    <span>Computer Entrepreneurship: </span>Learned about many different computer startups, analyzed how they have succeeded or why they have failed, and the strategies for being a leader/entrepreneur of a tech startup.    
-                </li>
-            </ul>
-        </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+
+

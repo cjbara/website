@@ -2,7 +2,6 @@
 <head>
     
     <config></config>
-    <links></links>
 
     <title>Cory Jbara</title>
 
@@ -12,12 +11,11 @@
     <script src="./bower_components/angular-route/angular-route.js"></script>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"></link>
     <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css"></link>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"></link>
+    <links></links>
 
     <script src="controllers/mainController.js"></script>
     <script src="controllers/contactController.js"></script>
@@ -36,7 +34,7 @@
         <sidebar></sidebar>
         <div class="non-sidebar">
             <div class="header" ng-show="main.showHeader">
-                <div class="valign-wrapper">
+                <div class="header-title">
                     <h2 id="title" class="center-align">{{main.pageTitle}}</h2>
                 </div>
             </div>

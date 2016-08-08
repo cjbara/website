@@ -17,6 +17,11 @@ angular.module('sidebarCtrl', [])
 	});
 
 	vm.tabs.push({
+		title: 'Work Experience',
+		link: 'work',
+	});
+
+	vm.tabs.push({
 		title: 'Skills',
 		link: 'skills',
 	});

@@ -1,6 +1,7 @@
 .connect-button {
 	display: inline-block;
 	cursor: pointer;
+	float: center;
 	margin: 10px;
 	height: 50px;
 	width: 50px;
@@ -64,4 +65,10 @@
 
 #github {
 	background-color: #00cc66;
+}
+
+#contact-me {
+	background-image: url(../images/grey.jpg);
+	height: 100%;
+	width: 100%;
 }
