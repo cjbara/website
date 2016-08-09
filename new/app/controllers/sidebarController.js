@@ -11,15 +11,10 @@ angular.module('sidebarCtrl', [])
 		link: 'about',
 	});
 
-	vm.tabs.push({
-		title: 'Projects',
-		link: 'projects',
-	});
-
-	vm.tabs.push({
-		title: 'Work Experience',
-		link: 'work',
-	});
+	// vm.tabs.push({
+	// 	title: 'Work Experience',
+	// 	link: 'work',
+	// });
 
 	vm.tabs.push({
 		title: 'Skills',
@@ -27,13 +22,13 @@ angular.module('sidebarCtrl', [])
 	});
 
 	vm.tabs.push({
-		title: 'Résumé',
-		link: 'resume',
+		title: 'Projects',
+		link: 'projects',
 	});
 
 	vm.tabs.push({
-		title: 'Contact Me',
-		link: 'contact',
+		title: 'Résumé',
+		link: 'resume',
 	});
 
 });

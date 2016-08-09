@@ -1,30 +1,38 @@
 <!--Projects-->
 <div ng-controller="projectController as pcontroller">
-	<div class="col s12 m4" ng-repeat="project in pcontroller.projects">
-		<div class="card hoverable">
-			<div class="card-image">
-				<img src="{{project.image}}">
-			</div>
-			<div class="card-stacked">
-				<div class="card-content">
-					<h5>{{project.title}}</h5>
-					<p>{{project.desc}}</p>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="col s12 m4" ng-repeat="projectRow in pcontroller.projects">
+        <div ng-repeat="project in projectRow">
+    		<div ng-if="project.modal" class="card hoverable modal-trigger waves-effect waves-light" href="{{project.modal}}" modal>
+    			<div class="card-image">
+    				<img src="{{project.image}}">
+    			</div>
+    			<div class="card-stacked">
+    				<div class="card-content">
+    					<h5>{{project.title}}</h5>
+    					<p>{{project.desc}}</p>
+    				</div>
+    			</div>
+    		</div>
+            <a ng-if="!project.modal" class="card hoverable waves-effect waves-light" href="{{project.github}}" target="_blank">
+                <div class="card-image">
+                    <img src="{{project.image}}">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <h5>{{project.title}}</h5>
+                        <p>{{project.desc}}</p>
+                    </div>
+                </div>
+            </a>
+    	</div>
+    </div>
 </div>
 
 <!--Modals for the project learn more pages-->
-<div class="modal fade" id="pacmanModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title" id="myModalLabel">PacMan</h3>
-            </div>
-            <div class="modal-body">
-                <video height="500" controls>
+<div class="modal modal-fixed-footer" id="pacmanModal">
+    <div class="modal-content">
+        <h3 class="modal-title" id="myModalLabel">PacMan</h3>
+        <video height="100%" controls>
             <source src="assets/PacMan.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -70,26 +78,19 @@
         </ul>
         <p>I wanted to elaborate more on the Ghost's movements (because I am so proud of this project), so I did so in a different modal.</p>
         <a class="btn btn-primary" role="button" id="ghostbutton">Ghost's Movement Algorithms</a>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
 </div>
-<div class="modal fade" id="ghostModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title" id="myModalLabel">PacMan's Ghost's Movement Algorithms</h3>
-            </div>
-            <div class="modal-body">
-                <video height="500" controls>
+<div class="modal modal-fixed-footer" id="ghostModal">
+    <div class="modal-content">
+        <h3 class="modal-title" id="myModalLabel">PacMan's Ghost's Movement Algorithms</h3>
+        <video height="500" controls>
             <source src="assets/PacMan.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-                <p>The most complicated part of the game was programming the ghosts. Each ghost
+        <p>The most complicated part of the game was programming the ghosts. Each ghost
         had three (but actually five) different states. These were: chase, scatter,
         frighten, dead, and housed. Each of these states caused the ghosts to move
         differently.</p>
@@ -165,34 +166,26 @@
         body, just eyes, and the number of points appears on Pac-Man's body. When a
         dead ghost gets to his target, it is "housed" and then goes into the house and
         immediately leaves.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
 </div>
-<div class="modal fade" id="marioModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title" id="myModalLabel">Super Mario Bros</h3>
-            </div>
-            <div class="modal-body">
-                <img src="assets/images/mario2.jpg">
-                <h4>Project Overview</h4>
-                <p>Mario is able to jump and land on the platforms throughout the level to get to the flag on the far right side! Throughout the level, you will encounter dangerous enemies: goombas and koopas. If you touch one of those enemies you will lose a life. Additionally, if you fall into a pit you will lose a life. If you lose three lives the game is over. However, you may kill enemies by jumping and landing on top of them. Furthermore if you get mushroom, you will turn into big Mario and be able to get hit by an enemy twice without losing a life. If manage to get to the flag at the end of the level you will win!</p>
-                <h4>What I Learned</h4>
-                <p>By doing this project, I not only understand C++ very well, but I can also take the OOP concepts I learned and apply them to other languages like Python or JavaScript to complete more projects. Also, by working with a partner, I was forced to use a code sharing repo, so I learned how to use git and GitHub. To this day, I back up everything I work on to my GitHub page (either publicly or privately, so don't be surprised if not all my projects are visible). We also used SDL2 as our graphics library, which was an improvement from my PacMan project, where I used a combination of lines and shapes to code the game. Lastly, I learned how to plan out a large project, and how difficult it is to anticipate all of the possible nuances a large software system can have.</p>
-                <h4>My Role:</h4>
-                <p>My main role in the project was getting Mario on the screen. While this may seem trivial at first, it was actually very difficult to implement. Mario has a ton of minute details in his physical movements, which was hard to replicate in the coding of his actual character movements. He has three different running accelerations, a different skidding deceleration, and very radical aerial physics. I coded all of these features individually, slowy building upon the previous versions.</p>
+<div class="modal modal-fixed-footer" id="marioModal">
+    <div class="modal-content">
+        <h3 class="modal-title" id="myModalLabel">Super Mario Bros</h3>
+        <img src="assets/images/mario2.jpg">
+        <h4>Project Overview</h4>
+        <p>Mario is able to jump and land on the platforms throughout the level to get to the flag on the far right side! Throughout the level, you will encounter dangerous enemies: goombas and koopas. If you touch one of those enemies you will lose a life. Additionally, if you fall into a pit you will lose a life. If you lose three lives the game is over. However, you may kill enemies by jumping and landing on top of them. Furthermore if you get mushroom, you will turn into big Mario and be able to get hit by an enemy twice without losing a life. If manage to get to the flag at the end of the level you will win!</p>
+        <h4>What I Learned</h4>
+        <p>By doing this project, I not only understand C++ very well, but I can also take the OOP concepts I learned and apply them to other languages like Python or JavaScript to complete more projects. Also, by working with a partner, I was forced to use a code sharing repo, so I learned how to use git and GitHub. To this day, I back up everything I work on to my GitHub page (either publicly or privately, so don't be surprised if not all my projects are visible). We also used SDL2 as our graphics library, which was an improvement from my PacMan project, where I used a combination of lines and shapes to code the game. Lastly, I learned how to plan out a large project, and how difficult it is to anticipate all of the possible nuances a large software system can have.</p>
+        <h4>My Role:</h4>
+        <p>My main role in the project was getting Mario on the screen. While this may seem trivial at first, it was actually very difficult to implement. Mario has a ton of minute details in his physical movements, which was hard to replicate in the coding of his actual character movements. He has three different running accelerations, a different skidding deceleration, and very radical aerial physics. I coded all of these features individually, slowy building upon the previous versions.</p>
         <p>Once I implemented Mario’s physics engine, he was able to move around the screen as he would in the SNES game. However, the code was not easily reusable, so I had to encapsulate these movements into a class, with very easy functions to call from the main program. I wrapped the physics into an input handling method. Also, I created a move method to update his position and a render method to show him on the screen. It was very useful to have this class because once it was completed, we did not have to worry how certain functions would act, we just had to call them. Throughout this project, I learned many OOP paradigms and how to properly utilize objects as a part of a larger program.</p>
         <p>My other big role in the project was to create the map. I created the NonMoving abstract class, which is basically a general map element that has different hitboxes and ways it can interact with the environment. From this class there are many derived classes, including Brick, Question, Pipe, Stair, and Flag. These also have different ways to interact with the other elements on screen. Once I created the base class, creating the derived classes was rather simple. They all had a render function from the base class and the collision detection with Mario was handled in Mario’s class. All they had to do was return their hitbox, and let the Mario class do the collision detection.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        <a class="modal-action waves-effect waves-green btn-flat " href="https://github.com/cjbara/SuperMarioBros"><i class="fa fa-github" aria-hidden="true"></i> View on Github</a>
     </div>
 </div>

@@ -1,17 +1,17 @@
     <!--About Me-->
-    <ul class="tabs z-depth-1">
-      <li class="tab"><a ng-click="main.select('about')">About</a></li>
-      <li class="tab"><a ng-click="main.select('hobbies')">Hobbies</a></li>
-      <li class="tab"><a ng-click="main.select('prez')">Fisher Life</a></li>
+    <ul tabs class="z-depth-1" reload="allTabContentLoaded">
+      <li class="tab"><a class="active" href="#about">About</a></li>
+      <li class="tab"><a href="#hobbies">Hobbies</a></li>
+      <li class="tab"><a href="#president">Fisher Life</a></li>
     </ul>
     <div class="container">
-        <div id="about" class="col s12" ng-show="main.about">
+        <div id="about" class="col s12">
             <p class="text-center">I am a senior at <a href="http://nd.edu">Notre Dame</a> majoring in <a href="http://cse.nd.edu">Computer Science</a>. I love coding and working on developing applications for a variety of uses. One of my major passions is to digitize all information. In the recent years, some great innovators have developed awesome technologies to accomplish this goal, ranging everywhere from personal money transfer to ride services, and I am excited to partake in these innovations. 
             </p>
             <p class="text-center">Outside of schoolwork and projects, I love to be involved with my family and my <a href="#fisher">Fisher family</a>. I love watching and playing sports, including the Olympics, baseball, football, hockey, and spikeball, and will always get excited about a good meal. I enjoy staying active through running, lifting, yoga, and the occasional swim. I find helping others to be one of the most rewarding experiences life has to offer, and I try to do so whenever I have the opportunity.
             </p>
         </div>
-        <div id="hobbies" ng-show="main.hobbies">
+        <div id="hobbies">
             <p>I am a very big sports fan, especially college football, but I also love to follow golf, the NFL, college basketball, and the MLB. I also love to play sports, ranging everywhere from full pad ice hockey to Spikeball on the quad.
             </p>
             <p>I also love to follow technology news. I am very excited about the new advancement in machine learning, such as Apple being able to recommend apps based on context or Google (or Here Maps) being able to decipher the traffic patterns on a freeway. I look forward to being part of these innovations, because I know they will continue to be more widespread over the coming years.
@@ -21,7 +21,7 @@
             <p>I am extremely lucky to have such an amazing family as a support system that provides guidance whenever I need. We love to laugh and do fun things together, whether it be a long family vacation every summer, or an impromptu meal where we all gather around the dinner table.
             </p>
         </div>
-        <div id="president" ng-show="main.prez">
+        <div id="president">
             <p>There are not many things that I am as passionate about as <a href="http://fisher.nd.edu/">Fisher Hall</a>. When I am on campus and not working on my schoolwork, I am generally in or around Fisher. While Notre Dame does not have greek life on campus, our dorms are single-sex, and most students reside in these dorms for 3-4 years. We come to associate with our dorm, and we form a tremendous brotherhood. Fisher has become my family away from home, and I have a tremendous sense of pride about my dorm. The men I have been fortunate enough to meet in Fisher are amazing people, and I was very proud to represent them last year as their president.</p>
             <p>I love to lead and set a good example for those who look up to me. As a Senior living off-campus with five of my other Fisher Brothers, I am  able to help the new Fishermen adapt to campus life and make their initial college experience a great one. Hopefully my example will carry on to those under me, and inspire them to do great things in the future.</p>
         </div>

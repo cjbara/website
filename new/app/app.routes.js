@@ -32,10 +32,5 @@ angular.module('app.routes', ['ngRoute'])
 		// skills page
 		.when('/skills', {
 			templateUrl : 'views/skills.html',
-		})
-
-		// contact page
-		.when('/contact', {
-			templateUrl : 'views/contact.html',
 		});
 });
