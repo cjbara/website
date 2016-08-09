@@ -1,0 +1,85 @@
+.connect-button {
+	display: inline-block;
+	cursor: pointer;
+	line-height: 40px;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	vertical-align: top;
+	border: 1px solid #e3e3e3;
+	color: #ffffff;
+}
+
+.connect-button:hover {
+	cursor: pointer;
+}
+
+.connect-button a:hover {
+	cursor: pointer;
+}
+
+.connect-button a {
+	padding: 0px !important;
+	text-align: center;
+}
+
+.connect-button i {
+    display:inline-block;
+    font-size: 24px;
+    color:white;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.text {
+	margin: 10px auto 10px auto;
+	width: 470px;
+	border-radius:5px;
+}
+
+.text p {
+	color: white;
+	font-weight: bold;
+	margin:5px;
+	padding:5px;
+}
+
+#facebook {
+	background-color: #3B5998;
+}
+
+#facebook a {
+	margin-left: 0px;
+}
+
+#linkedin {
+	background-color: #0077b5;
+	margin-left: 48px;
+	margin-right: 5px;
+}
+
+#linkedin a {
+	margin-top: -2px;
+	margin-left: 1px;
+}
+
+#github {
+	background-color: #00cc66;
+	margin-right: 5px;
+}
+
+#github a {
+	margin-left: 0px;
+	margin-top: -1px;
+}
+
+#github i {
+	font-size: 28px;
+}
+
+#contact-me {
+	background-image: url(../images/grey.jpg);
+	height: 100%;
+	width: 100%;
+}
