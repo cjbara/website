@@ -27,7 +27,7 @@ angular.module('sidebarCtrl', [])
 	});
 
 	vm.tabs.push({
-		title: 'Résumé',
+		title: 'R\xE9sum\xE9',
 		link: 'resume',
 	});
 
