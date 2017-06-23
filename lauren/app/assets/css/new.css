@@ -1,0 +1,8 @@
+		#nav:after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 0.75em;
+			background-color: #37c0fb;
+			background-image: url("images/bg01.png");
+		}

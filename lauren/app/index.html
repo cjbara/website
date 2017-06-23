@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html ng-app="laurenWebsiteApp">
+	<head>
+		<title>Lauren Jbara</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+	    <script src="./bower_components/angular/angular.js"></script>
+	    <script src="./bower_components/angular-route/angular-route.js"></script>
+
+		<script src="controllers/mainController.js"></script>
+	    <script src="app.routes.js"></script>
+	    <script src="app.js"></script>
+	</head>
+	<body ng-controller="mainController as main">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+					<h1>Lauren Jbara</h1>
+                    <a class="connect-button text-center" id="facebook" href="https://www.facebook.com/lauren.jbara" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="connect-button text-center" id="instagram" href="https://www.instagram.com/laurenjbara/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="connect-button text-center" id="twitter" href="https://twitter.com/laurenjbara" target="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li ng-class="main.isCurrent.home"><a href="#/home">Home</a></li>
+							<li ng-class="main.isCurrent.bio"><a href="#/bio">Bio</a></li>
+							<li ng-class="main.isCurrent.reel"><a href="#/reel">Reel</a></li>
+							<li ng-class="main.isCurrent.gallery"><a href="#/gallery">Gallery</a></li>
+							<li ng-class="main.isCurrent.clips"><a href="#/clips">Clips</a></li>
+						</ul>
+					</nav>
+
+				</div>
+
+			<ng-view></ng-view>
+
+			<!-- Footer -->
+				<div id="footer">
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Glasses Smart Home. All rights reserved</li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
