@@ -1,30 +1,44 @@
 angular.module('app.directives', [])
 
-.directive('config', function() {
+.directive('userView', function() {
 	return {
 		restrict: 'E',
-		templateUrl: 'views/config.html'
+		templateUrl: 'views/userView.html'
 	};
 })
 
-.directive('links', function() {
+.directive('mobileUserView', function() {
 	return {
 		restrict: 'E',
-		templateUrl: 'views/links.html'
+		templateUrl: 'views/mobileUserView.html'
 	};
 })
 
-.directive('navbar', function() {
+.directive('about', function() {
 	return {
 		restrict: 'E',
-		templateUrl: 'views/navbar.html'
+		templateUrl: 'views/about.html'
 	};
 })
 
-.directive('foot', function() {
+.directive('skills', function() {
 	return {
 		restrict: 'E',
-		templateUrl: 'views/footer.html'
+		templateUrl: 'views/skills.html'
+	};
+})
+
+.directive('projects', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'views/projects.html'
+	};
+})
+
+.directive('myHeader', function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'views/head.html'
 	};
 })
 
@@ -33,4 +47,4 @@ angular.module('app.directives', [])
 		restrict: 'E',
 		templateUrl: 'views/sidebar.html'
 	};
-})
+});

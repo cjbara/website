@@ -1,7 +1,6 @@
 <html lang="en" ng-app="coryWebsiteApp">
 <head>
-    
-    <config></config>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Cory Jbara</title>
 
@@ -16,7 +15,11 @@
 
     <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css"></link>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"></link>
-    <links></links>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Roboto:700,400' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <link rel="stylesheet" href="./assets/css/contactme.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
 
     <script src="controllers/mainController.js"></script>
     <script src="controllers/projectController.js"></script>
@@ -27,22 +30,23 @@
 
 </head>
 <body ng-controller="mainController as main">
-
-    <!-- <navbar></navbar> -->
-
     <div class="row">
-        <sidebar></sidebar>
-        <div class="non-sidebar">
-            <div class="header" ng-show="main.showHeader">
-                <div class="header-title">
-                    <h2 id="title" class="center-align">{{main.pageTitle}}</h2>
+        <div class="show-if-small">
+            <mobile-user-view></mobile-user-view>
+            <my-header></my-header>
+            <about></about>
+            <skills></skills>
+            <projects></projects>
+        </div>
+        <div class="show-if-large">
+            <sidebar></sidebar>
+            <div class="non-sidebar">
+                <my-header></my-header>
+                <div class="container">
+                    <ng-view></ng-view>
                 </div>
             </div>
-            <ng-view></ng-view>
         </div>
     </div>
-
-    <!-- <foot></foot> -->
-
 </body>
 </html>

@@ -19,11 +19,6 @@ angular.module('app.routes', ['ngRoute'])
 			templateUrl : 'views/projects.html',
 		})
 
-		// work experience page
-		.when('/work', {
-			templateUrl : 'views/work.html',
-		})
-
 		// resumes page
 		.when('/resume', {
 			templateUrl : 'views/resume.html',

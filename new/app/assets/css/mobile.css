@@ -1,0 +1,32 @@
+
+.mobile-circle {
+	margin-top: 20px;
+	width: 50% !important;
+	height: auto !important;
+	margin-bottom: 10px !important;
+}
+
+.mobile-text {
+	text-align: center;
+}
+
+#linkedin-mobile {
+	background-color: #0077b5;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+.show-if-small {
+	display: none;
+}
+
+@media (max-width: 978px) {
+
+	.show-if-small {
+		display: block;
+	}
+
+	.show-if-large {
+		display: none;
+	}
+}

@@ -4,16 +4,24 @@ angular.module('projCtrl', [])
 
 	var vm = this;
 
-	vm.projects = [[],[],[]];
+	vm.projects = [];
 
-	vm.projects[0].push({
+	vm.projects.push({
+		title: 'Glasses Smart Home Security',
+		desc: 'Designed and built a smart home security system complete with door locks, alarm systems, motion sensors, and a front door camera.',
+		github: 'http://seniordesign.ee.nd.edu/2017/Design%20Teams/glasses/',
+		image: 'assets/images/glasses.png',
+		tooltip: 'View Project Website'
+	});
+
+	vm.projects.push({
 		title: 'WhereYouAt',
 		desc: 'Designed and built an iOS app that allows users to know what their friends are doing on any given night.',
 		github: 'https://github.com/jrocha2/WhereYouAt',
 		image: 'assets/images/whereYouAt.jpg'
 	});
 
-	vm.projects[1].push({
+	vm.projects.push({
 		title: 'IrishTrade',
 		desc: 'Created a new system for students at ND to buy and sell goods and services. This project had a very complicated backend in Oracle.',
 		github: 'https://github.com/cjbara/IrishTrade',
@@ -22,14 +30,14 @@ angular.module('projCtrl', [])
 		image: 'assets/images/irishTrade.jpg'
 	});
 
-	vm.projects[2].push({
+	vm.projects.push({
 		title: 'C-Minor Compiler',
 		desc: 'Created a full compiler for a C-like language called C-Minor, implementing a scanner, parser, type checker, and code generator.',
 		github: 'https://github.com/cjbara/cminorCompiler',
 		image: 'assets/images/compilers.jpg'
 	});
 
-	vm.projects[2].push({
+	vm.projects.push({
 		title: 'Super Mario Bros',
 		desc: 'Recreated the first level of the classic NES side-scroller, Super Mario Bros, using Object Oriented Programming in C++',
 		github: 'https://github.com/cjbara/SuperMarioBros',
@@ -37,7 +45,7 @@ angular.module('projCtrl', [])
 		image: 'assets/images/mario1.jpg'
 	});
 
-	vm.projects[1].push({
+	vm.projects.push({
 		title: 'PacMan',
 		desc: 'Programmed a working version of PacMan in C, using discrete movements and the original algorithms for the ghost movement.',
 		github: 'https://github.com/cjbara/PacMan',
@@ -45,14 +53,14 @@ angular.module('projCtrl', [])
 		image: 'assets/images/pacmanhome.png'
 	});
 
-	vm.projects[0].push({
+	vm.projects.push({
 		title: 'ND Room Picks',
 		desc: 'My team of 4 created a new web interface that allows undergraduate students to pick on-campus rooms using mySQL as the database and PHP.',
 		github: 'https://github.com/cjbara/domerdoors',
 		image: 'assets/images/dome.jpg'
 	});
 
-	vm.projects[2].push({
+	vm.projects.push({
 		title: 'Ellie\'s Deli App',
 		desc: 'Built an online ordering application for the Fisher Hall food service, Ellie\'s Deli',
 		github: 'https://github.com/cjbara/ellies',
@@ -60,7 +68,7 @@ angular.module('projCtrl', [])
 		image: 'assets/images/ellies.jpg'
 	});
 
-	vm.projects[0].push({
+	vm.projects.push({
 		title: 'CoryJbara.com',
 		desc: 'Recently redesigned this site using AngularJS and MaterializeCSS. Compared to the old application, it is much prettier and smoother.',
 		github: 'http://github.com/cjbara/website',

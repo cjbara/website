@@ -7,10 +7,12 @@
 	margin-bottom: 0px !important;
 }
 
-.non-sidebar {
-	margin-top: 0px;
-	height: 100%;
-	margin-left:300px;
+.side-nav.fixed {
+	overflow:hidden
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 .header {
@@ -21,7 +23,6 @@
 }
 
 .header-title {
-	position: relative;
 	height: 100%;
 	line-height: 100%;
 }
@@ -38,16 +39,7 @@
 }
 
 .sidemenu {
-	border-top:1px solid rgba(0,0,0,0.05);
-}
-
-#title {
-	position: relative;
-	display: block;
-	height: 100%;
-	width: 100%;
-	color: #ffffff;
-	padding-top: 20%;
+	border-top:2px solid rgba(0,0,0,0.05);
 }
 
 a {
@@ -64,6 +56,62 @@ h2 {
 	margin-top: 20px;
 }
 
-.card {
+.non-sidebar {
+	margin-left:300px;
+}
+
+header {
+	background-image: url("../images/background.jpg");
+}
+
+.padding-top {
+	color: white;
+	padding-top: 35px;
+	padding-bottom: 20px;
+}
+
+.paragraph {
+	font-size: 18px;
+}
+
+ul.circles li {
+	display: inline-block;
+    border: 2px solid rgba(57,57,57,.5);
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    line-height: 7;
+    font-size: 14px;
+}
+
+.language-image {
+	margin-top: 10px;
+	padding-right: 20px;
+	height: 100px;
+	max-width: 130px;
+}
+
+.padding-left {
+	padding-left: 10px;
+}
+
+.classes li {
+	margin-top: 12px;
+}
+
+.margin-bottom {
+	margin-bottom: 200px;
+}
+
+.card-image {
+	max-width: 30% !important;
+}
+
+a.horizontal {
 	color: black;
 }
+
+
